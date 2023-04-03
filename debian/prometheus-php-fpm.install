@@ -1,0 +1,2 @@
+#!/usr/bin/dh-exec
+dist/php-fpm_exporter_linux_amd64_v1/php-fpm_exporter => /usr/lib/php-fpm-exporter/php_fpm_exporter

@@ -1,0 +1,15 @@
+Source: prometheus-php-fpm
+Section: devel
+Maintainer: Platform Operability <platformoperability@avature.net>
+Standards-Version: 4.0.0
+Homepage: https://gitlab.xcade.net/avature/prometheus-php-fpm
+Build-Depends: debhelper (>= 9),
+               dh-exec,
+               dh-systemd,
+               golang (>= 1.17)
+
+Package: prometheus-php-fpm
+Architecture: all
+Depends:
+Pre-Depends: dpkg (>= 1.18),
+Description: Prometheus exporter for PHP-FPM

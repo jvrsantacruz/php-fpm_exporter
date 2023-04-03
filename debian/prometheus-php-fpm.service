@@ -1,0 +1,14 @@
+[Unit]
+Description=Daemon for prometheus php-fpm exporter
+
+[Install]
+WantedBy=multi-user.target
+
+[Service]
+Type=simple
+Restart=on-failure
+StandardOutput=syslog
+StandardError=syslog
+SyslogIdentifier=prometheus-php-fpm
+
+ExecStart=/usr/lib/php-fpm-exporter/php_fpm_exporter server --web.listen-address ":9135" --phpfpm.fix-process-count
