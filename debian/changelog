@@ -1,0 +1,5 @@
+prometheus-php-fpm (2.2.0-1) Ubuntu; urgency=medium
+
+  * Fix broken fpm json parser
+
+ -- Javier Santacruz <javier.santacruz@avature.net>  Mon, 03 Apr 2023 15:54:50 +0200
